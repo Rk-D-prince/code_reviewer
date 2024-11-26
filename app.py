@@ -25,7 +25,7 @@ def review_code(code):
             template="Review the following Python code and identify potential bugs, errors, or areas for improvement. Provide a fixed code snippet if possible:\n```python\n{code}\n```"
         )
 
-               llm_chain = LLMChain(llm=llm, prompt=prompt_template)
+        llm_chain = LLMChain(llm=llm, prompt=prompt_template)
 
         
         review = llm_chain.run(code)
